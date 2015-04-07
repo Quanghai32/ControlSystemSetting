@@ -5,7 +5,7 @@ Public Class SettingForm
     Private myAdapter() As SqlDataAdapter
     Private myDataset() As DataSet
 
-    Private myTableName() As String = New String() {"AGV", "EndDevices", "HostXbee", "LineGroup", "Part", "StartPoint", "CrossTable", "AGVGroup", "ParkPoint"}
+    Private myTableName() As String = New String() {"AGV", "EndDevices", "HostXbee", "LineGroup", "Part", "StartPoint", "CrossTable", "AGVGroup", "ParkPoint", "WorkingTime"}
     Private myDgv() As DataGridView
 
     Private TableSIZE As Integer
@@ -18,7 +18,7 @@ Public Class SettingForm
         SQLcon = New SqlConnection(SQLstrConn)
         SQLcon.Open()
 
-        myDgv = New DataGridView() {dgvAGV, dgvEndDevices, dgvHostXbee, dgvLineGroup, dgvPart, dgvStartPoint, dgvCrossPoint, dgvAGVGroup, dgvParkPoint}
+        myDgv = New DataGridView() {dgvAGV, dgvEndDevices, dgvHostXbee, dgvLineGroup, dgvPart, dgvStartPoint, dgvCrossPoint, dgvAGVGroup, dgvParkPoint, dgvWorkingTime}
 
         TableSIZE = myTableName.Count
         myAdapter = New SqlDataAdapter(TableSIZE - 1) {}

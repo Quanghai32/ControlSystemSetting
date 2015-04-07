@@ -37,12 +37,14 @@ Partial Class SettingForm
         Me.dgvStartPoint = New System.Windows.Forms.DataGridView()
         Me.TabSettingCrossPoint = New System.Windows.Forms.TabPage()
         Me.dgvCrossPoint = New System.Windows.Forms.DataGridView()
-        Me.butSettingOK = New System.Windows.Forms.Button()
-        Me.butSettingCancel = New System.Windows.Forms.Button()
         Me.TabSettingAGVGroup = New System.Windows.Forms.TabPage()
         Me.dgvAGVGroup = New System.Windows.Forms.DataGridView()
         Me.TabSettingParkPoint = New System.Windows.Forms.TabPage()
         Me.dgvParkPoint = New System.Windows.Forms.DataGridView()
+        Me.butSettingOK = New System.Windows.Forms.Button()
+        Me.butSettingCancel = New System.Windows.Forms.Button()
+        Me.TabWorkingTime = New System.Windows.Forms.TabPage()
+        Me.dgvWorkingTime = New System.Windows.Forms.DataGridView()
         Me.TabSetting.SuspendLayout()
         Me.TabSettingAGV.SuspendLayout()
         CType(Me.dgvAGV, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,6 +64,8 @@ Partial Class SettingForm
         CType(Me.dgvAGVGroup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabSettingParkPoint.SuspendLayout()
         CType(Me.dgvParkPoint, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabWorkingTime.SuspendLayout()
+        CType(Me.dgvWorkingTime, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabSetting
@@ -75,6 +79,7 @@ Partial Class SettingForm
         Me.TabSetting.Controls.Add(Me.TabSettingCrossPoint)
         Me.TabSetting.Controls.Add(Me.TabSettingAGVGroup)
         Me.TabSetting.Controls.Add(Me.TabSettingParkPoint)
+        Me.TabSetting.Controls.Add(Me.TabWorkingTime)
         Me.TabSetting.Location = New System.Drawing.Point(13, 13)
         Me.TabSetting.Name = "TabSetting"
         Me.TabSetting.SelectedIndex = 0
@@ -217,24 +222,6 @@ Partial Class SettingForm
         Me.dgvCrossPoint.Size = New System.Drawing.Size(738, 439)
         Me.dgvCrossPoint.TabIndex = 0
         '
-        'butSettingOK
-        '
-        Me.butSettingOK.Location = New System.Drawing.Point(263, 500)
-        Me.butSettingOK.Name = "butSettingOK"
-        Me.butSettingOK.Size = New System.Drawing.Size(75, 23)
-        Me.butSettingOK.TabIndex = 3
-        Me.butSettingOK.Text = "OK"
-        Me.butSettingOK.UseVisualStyleBackColor = True
-        '
-        'butSettingCancel
-        '
-        Me.butSettingCancel.Location = New System.Drawing.Point(344, 500)
-        Me.butSettingCancel.Name = "butSettingCancel"
-        Me.butSettingCancel.Size = New System.Drawing.Size(75, 23)
-        Me.butSettingCancel.TabIndex = 4
-        Me.butSettingCancel.Text = "Cancel"
-        Me.butSettingCancel.UseVisualStyleBackColor = True
-        '
         'TabSettingAGVGroup
         '
         Me.TabSettingAGVGroup.Controls.Add(Me.dgvAGVGroup)
@@ -275,6 +262,44 @@ Partial Class SettingForm
         Me.dgvParkPoint.Size = New System.Drawing.Size(738, 439)
         Me.dgvParkPoint.TabIndex = 0
         '
+        'butSettingOK
+        '
+        Me.butSettingOK.Location = New System.Drawing.Point(263, 500)
+        Me.butSettingOK.Name = "butSettingOK"
+        Me.butSettingOK.Size = New System.Drawing.Size(75, 23)
+        Me.butSettingOK.TabIndex = 3
+        Me.butSettingOK.Text = "OK"
+        Me.butSettingOK.UseVisualStyleBackColor = True
+        '
+        'butSettingCancel
+        '
+        Me.butSettingCancel.Location = New System.Drawing.Point(344, 500)
+        Me.butSettingCancel.Name = "butSettingCancel"
+        Me.butSettingCancel.Size = New System.Drawing.Size(75, 23)
+        Me.butSettingCancel.TabIndex = 4
+        Me.butSettingCancel.Text = "Cancel"
+        Me.butSettingCancel.UseVisualStyleBackColor = True
+        '
+        'TabWorkingTime
+        '
+        Me.TabWorkingTime.Controls.Add(Me.dgvWorkingTime)
+        Me.TabWorkingTime.Location = New System.Drawing.Point(4, 22)
+        Me.TabWorkingTime.Name = "TabWorkingTime"
+        Me.TabWorkingTime.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabWorkingTime.Size = New System.Drawing.Size(744, 445)
+        Me.TabWorkingTime.TabIndex = 9
+        Me.TabWorkingTime.Text = "Working time"
+        Me.TabWorkingTime.UseVisualStyleBackColor = True
+        '
+        'dgvWorkingTime
+        '
+        Me.dgvWorkingTime.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvWorkingTime.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvWorkingTime.Location = New System.Drawing.Point(3, 3)
+        Me.dgvWorkingTime.Name = "dgvWorkingTime"
+        Me.dgvWorkingTime.Size = New System.Drawing.Size(738, 439)
+        Me.dgvWorkingTime.TabIndex = 0
+        '
         'SettingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -304,6 +329,8 @@ Partial Class SettingForm
         CType(Me.dgvAGVGroup, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabSettingParkPoint.ResumeLayout(False)
         CType(Me.dgvParkPoint, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabWorkingTime.ResumeLayout(False)
+        CType(Me.dgvWorkingTime, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -328,4 +355,6 @@ Partial Class SettingForm
     Friend WithEvents dgvAGVGroup As System.Windows.Forms.DataGridView
     Friend WithEvents TabSettingParkPoint As System.Windows.Forms.TabPage
     Friend WithEvents dgvParkPoint As System.Windows.Forms.DataGridView
+    Friend WithEvents TabWorkingTime As System.Windows.Forms.TabPage
+    Friend WithEvents dgvWorkingTime As System.Windows.Forms.DataGridView
 End Class
