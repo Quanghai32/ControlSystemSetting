@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Control system setting", "Control system setting\Control system setting.vbproj", "{2DD74705-9FB0-47B5-9D15-B1ECBF08252D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ControlSystemSetting", "Control system setting\ControlSystemSetting.vbproj", "{2DD74705-9FB0-47B5-9D15-B1ECBF08252D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
